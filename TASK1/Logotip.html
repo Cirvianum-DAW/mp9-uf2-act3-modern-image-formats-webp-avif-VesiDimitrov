@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Format Experiment</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <header class="bg-blue-500 text-white text-center p-5">
+    <h1 class="text-4xl">Image Format Experiment</h1>
+  </header>
+  <main class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+    <div>
+      <h1>ORIGINAL PNG</h1>
+      <img src="../images/logotip.png" alt="Example 1" class="w-full" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>8 BITS PNG</h1>
+      <img src="../images/logotip8bits.png" alt="Example 1" class="w-full" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>LOW JPEG</h1>
+      <img src="../images/logotipLow.jpeg" alt="Example 2" class="w-full" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>MEDIUM JPEG</h1>
+      <img src="../images/logotipMedium.jpeg" alt="Example 3" class="w-full" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>HIGH JPEG</h1>
+      <img src="../images/logotipHigh.jpeg" alt="Example 3" class="w-full" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>ORIGINAL GIF</h1>
+      <img src="../images/logotip2.gif" alt="Example 3" class="w-full" />
+      <div class="image-info"></div>
+    </div>
+    <div class="p-4 bg-gray-100 rounded-lg">
+      <h1 class="text-2xl font-bold mb-4">What format is the most optimal for this type of image and why? Can its size
+        be reduced even more? Would it lose quality?</h1>
+      <h1 class="text-xl text-justify">El format mes òptim és PNG per a la qualitat superior que té, però si es vol reduir mida sense
+        perdre massa qualitat, és millor triar JPEG de qualitat mitjana o alta. Es pot ajustar la compressió del JPEG
+        per a una mida més petita, però podria afectar a la qualitat.</h1>
+    </div>
+  </main>
+  <script src="../scripts/main.js"></script>
+</body>
+
+</html>

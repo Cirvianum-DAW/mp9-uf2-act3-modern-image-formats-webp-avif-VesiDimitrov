@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Format Experiment</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <header class="bg-blue-500 text-white text-center p-5">
+    <h1 class="text-4xl">Image Format Experiment</h1>
+  </header>
+  <main class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+    <div>
+      <h1>ORIGINAL PNG</h1>
+      <img src="../images/postaDeSol.png" alt="Example 1" class="w-full" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>8 BITS PNG</h1>
+      <img src="../images/postaDeSol8bits.png" alt="Example 1" class="w-full" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>LOW JPEG</h1>
+      <img src="../images/postaDeSolLow.jpeg" alt="Example 2" class="w-full" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>MEDIUM JPEG</h1>
+      <img src="../images/postaDeSolMedium.jpeg" alt="Example 3" class="w-full" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>HIGH JPEG</h1>
+      <img src="../images/postaDeSolHigh.jpeg" alt="Example 3" class="w-full" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>ORIGINAL GIF</h1>
+      <img src="../images/postaDeSol.gif" alt="Example 3" class="w-full" />
+      <div class="image-info"></div>
+    </div>
+    <div class="p-4 bg-gray-100 rounded-lg">
+      <h1 class="text-2xl font-bold mb-4">What format is the most optimal for this type of image and why? 
+        With what compression quality does the image not lose quality? Can we reduce its size even more without
+        losing quality? What would happen if we save the image several times with JPEG format?</h1>
+      <h1 class="text-xl text-justify">Per a aquesta imatge, el format PNG de 8 bits és el més òptim, 
+        ja que ofereix una qualitat d'imatge alta amb una mida de fitxer significativament més petita 
+        que la versió original. Una qualitat de compressió mitjana en format JPEG permet reduir la mida
+        del fitxer sense perdre una quantitat notable de qualitat d'imatge. No, una vegada que s'ha
+        optimitzat la compressió sense pèrdua de qualitat, reduir més la mida del fitxer pot resultar 
+        en una pèrdua de qualitat d'imatge noticeable. Guardar repetidament la imatge en format JPEG pot 
+        provocar una degradació progressiva de la qualitat, ja que cada vegada que s'edita i es guarda, 
+        s'aplica una nova compressió amb pèrdua, augmentant el risc d'artefactes i pèrdua de detall.</h1>
+    </div>
+  </main>
+  <script src="../scripts/main.js"></script>
+</body>
+
+</html>
