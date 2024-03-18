@@ -2,40 +2,130 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Image Format Experiment</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
 </head>
 
 <body>
-  <header class="bg-blue-500 text-white text-center p-5">
-    <h1 class="text-4xl">Task 2</h1>
-  </header>
-  <main class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
-    <div>
-      <h1>ORIGINAL FLOR</h1>
-      <img src="../images/Flor.jpg" alt="Example 1" class="w-full" />
-      <div class="image-info"></div>
-    </div>
-    <div>
-      <h1>WEBP FLOR</h1>
-      <img src="../images/Flor.webp" alt="Example 1" class="w-full" />
-      <div class="image-info"></div>
-    </div>
-    <div>
-      <h1>JPEG FLOR</h1>
-      <img src="../images/Flor (1).jpg" alt="Example 2" class="w-full" />
-      <div class="image-info"></div>
-    </div>
-    <div>
-      <h1>AVIF FLOR</h1>
-      <img src="../images/Flor.avif" alt="Example 3" class="w-full" />
-      <div class="image-info"></div>
-    </div>
-  </main>
-  <script src="../scripts/main.js"></script>
+    <header class="bg-blue-500 text-white text-center p-5">
+        <h1 class="text-4xl">Task 2</h1>
+    </header>
+    <main class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+        <div>
+            <h1>ORIGINAL FLOR</h1>
+            <img src="../images/Flor.jpg" alt="Example 1" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <h1>WEBP FLOR</h1>
+            <img src="../images/Flor.webp" alt="Example 1" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <h1>JPEG FLOR</h1>
+            <img src="../images/Flor (1).jpg" alt="Example 2" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <h1>AVIF FLOR</h1>
+            <img src="../images/Flor.avif" alt="Example 3" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <h1>ORIGINAL TEULADA</h1>
+            <img src="../images/teulada.jpg" alt="Example 1" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <h1>WEBP TEULADA</h1>
+            <img src="../images/teulada.webp" alt="Example 1" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <h1>JPEG TEULADA</h1>
+            <img src="../images/teulada (1).jpg" alt="Example 2" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <h1>AVIF TEULADA</h1>
+            <img src="../images/teulada.avif" alt="Example 3" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <h1>ORIGINAL BMW</h1>
+            <img src="../images/bmw.jpg" alt="Example 1" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <h1>WEBP BMW</h1>
+            <img src="../images/bmw.webp" alt="Example 1" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <h1>JPEG BMW</h1>
+            <img src="../images/bmw (1).jpg" alt="Example 2" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <h1>AVIF BMW</h1>
+            <img src="../images/bmw.avif" alt="Example 3" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <h1 class="font-bold">Explain what you could observe, the differences, if AVIF is a good
+                 replacement for WebP, etc.</h1>
+            <h1>
+                AVIF presents excellent compression efficiency and image quality, outperforming both
+                JPEG and WebP in terms of smaller file sizes without compromising visual fidelity. 
+                However, its adoption might be hindered by its limited compatibility across various
+                browsers and platforms. While major browsers like Chrome and Firefox have begun to support AVIF, 
+                older browsers and certain platforms may not fully support it yet. Therefore, when choosing 
+                between image formats, it's crucial to consider compatibility requirements, especially if 
+                broader support across different browsers and platforms is essential for your application 
+                or website. Despite its superior compression capabilities, the decision to use AVIF over more 
+                widely supported formats like WebP should be weighed against the potential limitations in 
+                accessibility across different user environments.</h1>
+            
+        </div>
+        <div class="overflow-x-auto">
+            <table class="table-auto border-collapse w-full sm:w-auto">
+              <thead>
+                <tr>
+                  <th class="px-4 py-2 bg-gray-200 border">Image Name</th>
+                  <th class="px-4 py-2 bg-gray-200 border">Original size</th>
+                  <th class="px-4 py-2 bg-gray-200 border">JPG (Saving %)</th>
+                  <th class="px-4 py-2 bg-gray-200 border">WebP (Saving %)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-4 py-2 border">FLOR</td>
+                  <td class="px-4 py-2 border">312.98 KB</td>
+                  <td class="px-4 py-2 border">94.91 KB (69.65%)</td>
+                  <td class="px-4 py-2 border">36.71 KB (88.28%)</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-2 border">TEULADA</td>
+                  <td class="px-4 py-2 border">445.98 KB</td>
+                  <td class="px-4 py-2 border">97.09 KB (78.25%)</td>
+                  <td class="px-4 py-2 border">68.52 KB (84.65%)</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-2 border">BMW</td>
+                  <td class="px-4 py-2 border">211.17 KB</td>
+                  <td class="px-4 py-2 border">66.67 KB (68.49%)</td>
+                  <td class="px-4 py-2 border">29.51 KB (86.04%)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          
+    </main>
+    <script src="../scripts/main.js"></script>
 </body>
 
 </html>
